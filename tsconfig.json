@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "react": ["./node_modules/react"],
+      "react-dom": ["./node_modules/react-dom"],
+      "antd": ["./node_modules/antd"],
+      "api/*": ["./src/api/*"],
+      "container/*": ["src/containers/*"],
+      "components/*": ["./src/components/*"],
+      "stores/*": ["./src/stores/*"],
+      "helpers/*": ["./src/helpers/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "files": ["./src/index.tsx"],
+  "include": [
+    "src/**/*.tsx",
+    "types/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tools",
+    "public"
+  ]
+}
